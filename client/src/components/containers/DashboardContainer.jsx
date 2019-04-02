@@ -61,10 +61,10 @@ class UserContainer extends Component {
         <div className="p-2 text-right">
           <Button onClick={logout}>Logout</Button>
         </div>
-        <div className="flex w-full h-auto">
+        <div className="flex w-full h-auto md:flex-row flex-col">
           {user && !error && <UserInfo user={user} />}
           {authLoading && <Loading />}
-          <div className="w-3/4">
+          <div className="md:w-3/4 mx-10">
             {tweets && user && (
               <Fragment>
                 <TweetInput

@@ -17,7 +17,7 @@ export default class UserInfo extends PureComponent {
       user: { username, tweets, name, profilePhoto }
     } = this.props;
     return (
-      <div className="md:mr-2 w-1/4 p-10">
+      <div className="md:mr-2 md:w-1/4 p-10 mx-auto">
         <ProfilePhoto src={profilePhoto} alt={username} size="24" />
         <h3 className="my-2 uppercase">{name}</h3>
         <p className="font-light">@{username}</p>

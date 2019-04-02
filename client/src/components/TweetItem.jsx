@@ -27,12 +27,12 @@ export default class TweetItem extends PureComponent {
     return (
       <div className="flex mt-2" key={_id}>
         <ProfilePhoto src={profilePhoto} alt={username} size="16" />
-        <div className="ml-2 mt-1">
+        <div className="ml-5 mt-1 flex-1">
           <h3 className="font-bold inline">{username}</h3>
           <p className="font-sm font-italic inline ml-4">
             {distanceInWordsToNow(createdAt)} ago
           </p>
-          <h4 className="font-light">{text}</h4>
+          <h4 style={{ wordBreak: "break-word" }}>{text}</h4>
         </div>
       </div>
     );
